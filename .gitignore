@@ -2,4 +2,5 @@
 *.wpu
 *.pyc
 /data/
+/__pycache__/
 .gitattributes
