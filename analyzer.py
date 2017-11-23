@@ -23,4 +23,3 @@ class Data_analyzer():
         y = [count_0_60, count_60_70, count_70_80, count_80_90, count_90_100]
         plt.bar(x, y)
         plt.show()
-        print(count_80_90)
