@@ -1,0 +1,5 @@
+*.wpr
+*.wpu
+*.pyc
+/data/
+.gitattributes
