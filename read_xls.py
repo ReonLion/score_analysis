@@ -46,7 +46,15 @@ class Data_xls():
         for i in range(len(self.student_list_low) - 1):
             for j in range(len(self.student_list_low) - 1 - i):
                 if self.student_list_low[j].score < self.student_list_low[j + 1].score:
-                    self.student_list_low[j], self.student_list_low[j + 1] = self.student_list_low[j + 1], self.student_list_low[j]        
+                    self.student_list_low[j], self.student_list_low[j + 1] = self.student_list_low[j + 1], self.student_list_low[j]
+    
+    # 返回搜索结果
+    def student_search(self, keyword):
+        student_list_search = []
+        for student in self.student_list:
+            if keyword in student.name:
+                student_list_search.append(student)
+        return student_list_search
             
 if __name__ == '__main__':
     data = Data_xls('data/33班的成绩.xlsx')
